@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="Tìm trọ sinh viên gần FPT, ĐHQG Hòa Lạc" />
+    <meta name="keywords" content="trọ hòa lạc, trọ fpt, trọ sinh viên, ký túc xá" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      :root {
+        --primary: #0055ff;
+        --secondary: #ff5a5f;
+      }
+      .logo { font-weight: 800 !important; font-size: 24px; text-transform: uppercase; color: #fff !important; }
+      .logo span { color: var(--secondary); }
+      
+      /* Hiệu ứng nút đăng nhập/đăng ký */
+      .btn-glow {
+        box-shadow: 0 4px 15px rgba(0, 85, 255, 0.3);
+        border-radius: 30px !important;
+        padding: 10px 25px !important;
+        transition: all 0.3s ease;
+      }
+      .btn-glow:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 85, 255, 0.4); }
+      
+      /* Badge khoảng cách */
+      .tag-dist {
+        background: rgba(0, 85, 255, 0.1);
+        color: var(--primary);
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      /* Fix chiều cao ảnh cho đều */
+      .property-item .img img {
+        height: 280px;
+        object-fit: cover;
+        width: 100%;
+      }
+      
+      .nav-auth a { color: rgba(255,255,255,0.8); font-weight: 500; margin-right: 20px; text-decoration: none; }
+      .nav-auth a:hover { color: #fff; }
+
+      @media (max-width: 991px) { .nav-auth { display: none; } }
+    </style>
+
+    <title>Trọ Hòa Lạc &mdash; Hệ thống tìm phòng sinh viên FPT</title>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start">TRỌ<span>HOALAC</span></a>
+
+            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+              <li class="active"><a href="index.html">Trang chủ</a></li>
+              <li class="has-children">
+                <a href="#">Khu vực</a>
+                <ul class="dropdown">
+                  <li><a href="#">TĐC Bình Yên</a></li>
+                  <li><a href="#">TĐC Vai Réo</a></li>
+                  <li><a href="#">Thạch Hòa</a></li>
+                  <li><a href="#">Tân Xã</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tìm bạn ở ghép</a></li>
+              <li><a href="#">Dịch vụ vận chuyển</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+
+            <div class="nav-auth float-end d-none d-lg-inline-flex align-items-center mt-2">
+                <a href="./view/login.jsp">Đăng nhập</a>
+                <a href="#" class="btn btn-primary btn-glow text-white" data-bs-toggle="modal" data-bs-target="#modalRegister">Đăng ký ngay</a>
+            </div>
+
+            <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-slide">
+        <div class="img overlay" style="background-image: url('https://trohoalac.io.vn/_next/image?url=https%3A%2F%2Fvlqkecqwfvkymszkqooo.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Froom-images%2Fbtqw33vi6p9-1761922170200.webp&w=1920&q=75')"></div>
+        <div class="img overlay" style="background-image: url('https://trohoalac.io.vn/_next/image?url=https%3A%2F%2Fvlqkecqwfvkymszkqooo.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Froom-images%2Fe39i92ymdsv-1761922170176.webp&w=1920&q=75')"></div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center">
+            <h1 class="heading" data-aos="fade-up">
+              Ngôi nhà thứ hai cho sinh viên FPT & ĐHQG Hòa Lạc
+            </h1>
+            <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+              <input type="text" class="form-control px-4" placeholder="Bạn muốn tìm trọ ở khu vực nào? (ví dụ: Bình Yên)" />
+              <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="font-weight-bold text-primary heading">Phòng đẹp gần Đại học FPT</h2>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <p><a href="#" class="btn btn-primary text-white py-3 px-4">Xem tất cả phòng</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="property-slider-wrap">
+              <div class="property-slider">
+                
+                <div class="property-item">
+                  <a href="#" class="img">
+                    <img src="https://trohoalac.io.vn/_next/image?url=https%3A%2F%2Fvlqkecqwfvkymszkqooo.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Froom-images%2Fbtqw33vi6p9-1761922170200.webp&w=1920&q=75" alt="Image" class="img-fluid" />
+                  </a>
+                  <div class="property-content">
+                    <div class="price mb-2"><span>3.800.000đ</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">TĐC Vai Réo, Phú Cát</span>
+                      <span class="city d-block mb-3">Full nội thất, có thang máy</span>
+                      <div class="mb-3"><span class="tag-dist">Cách FPT: 800m</span></div>
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">Studio</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">Khép kín</span>
+                        </span>
+                      </div>
+                      <a href="#" class="btn btn-primary py-2 px-3">Chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="property-item">
+                  <a href="#" class="img">
+                    <img src="https://trohoalac.io.vn/_next/image?url=https%3A%2F%2Fvlqkecqwfvkymszkqooo.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Froom-images%2Fe39i92ymdsv-1761922170176.webp&w=1920&q=75" alt="Image" class="img-fluid" />
+                  </a>
+                  <div class="property-content">
+                    <div class="price mb-2"><span>4.200.000đ</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Khu tái định cư Bình Yên</span>
+                      <span class="city d-block mb-3">Phòng ban công, cực thoáng</span>
+                      <div class="mb-3"><span class="tag-dist">Cách FPT: 1.5km</span></div>
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-wifi me-2"></span>
+                          <span class="caption">Free Wifi</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-lock me-2"></span>
+                          <span class="caption">Vân tay</span>
+                        </span>
+                      </div>
+                      <a href="#" class="btn btn-primary py-2 px-3">Chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="property-item">
+                  <a href="#" class="img">
+                    <img src="https://trohoalac.io.vn/_next/image?url=https%3A%2F%2Fvlqkecqwfvkymszkqooo.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Froom-images%2Fs17imrzxga-1761922170147.webp&w=1920&q=75" alt="Image" class="img-fluid" />
+                  </a>
+                  <div class="property-content">
+                    <div class="price mb-2"><span>3.500.000đ</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Thôn 2 Thạch Hòa</span>
+                      <span class="city d-block mb-3">Yên tĩnh, an ninh tốt</span>
+                      <div class="mb-3"><span class="tag-dist">Cách ĐHQG: 500m</span></div>
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-user me-2"></span>
+                          <span class="caption">Ở ghép ok</span>
+                        </span>
+                      </div>
+                      <a href="#" class="btn btn-primary py-2 px-3">Chi tiết</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div id="property-nav" class="controls">
+                <span class="prev" data-controls="prev">Trước</span>
+                <span class="next" data-controls="next">Tiếp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="features-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="box-feature">
+              <span class="flaticon-house"></span>
+              <h3 class="mb-3">Tìm trọ nhanh</h3>
+              <p>Hệ thống lọc thông minh theo giá tiền và khoảng cách tới trường.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="box-feature">
+              <span class="flaticon-building"></span>
+              <h3 class="mb-3">Phòng chính chủ</h3>
+              <p>Thông tin rõ ràng, làm việc trực tiếp với chủ trọ, không qua môi giới.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="box-feature">
+              <span class="flaticon-house-3"></span>
+              <h3 class="mb-3">Đã xác minh</h3>
+              <p>Mọi hình ảnh trên hệ thống đều là ảnh thực tế 100%.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="box-feature">
+              <span class="flaticon-house-1"></span>
+              <h3 class="mb-3">Hỗ trợ 24/7</h3>
+              <p>Đội ngũ hỗ trợ sinh viên giải quyết mọi thắc mắc về hợp đồng.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Trọ Hòa Lạc</h3>
+              <p>Hệ thống quản lý và tìm kiếm phòng trọ hàng đầu dành cho sinh viên tại khu Công Nghệ Cao Hòa Lạc.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Liên kết nhanh</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Liên hệ</h3>
+              <address>Khu CNC Hòa Lạc, Thạch Thất, Hà Nội</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://0987654321">0987 654 321</a></li>
+                <li><a href="mailto:support@trohoalac.vn">support@trohoalac.vn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>. Trọ Hòa Lạc - Sinh viên vì cộng đồng.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Đang tải...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
